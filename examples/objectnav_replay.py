@@ -70,6 +70,16 @@ def main():
     cfg = config
     cfg.defrost()
     cfg.DATASET.DATA_PATH = args.path
+
+    # Set to a high limit to allow replaying episodes with 
+    # number of steps greater than ObjectNav episode step
+    # limit.
+    cfg.ENVIRONMENT.MAX_EPISODE_STEPS = 5000
+
+    # Set to a high limit to allow loading episodes with 
+    # number of steps greater than ObjectNav episode step
+    # limit in the replay buffer.
+    cfg.DATASET.MAX_REPLAY_STEPS = 5000
     cfg.freeze()
 
     run_reference_replay(

@@ -102,5 +102,5 @@ TASK:
 DATASET:
   TYPE: PickPlaceDataset-v0
   SPLIT: train
-  DATA_PATH: "data/datasets/object_rearrangement/v3/{split}/{split}.json.gz"
-  SCENES_DIR: "data/scene_datasets/habitat-test-scenes/"
+  DATA_PATH: "data/datasets/pick_place/pick_place_12k/{split}/{split}.json.gz"
+  SCENES_DIR: "data/scene_datasets/mp3d/"

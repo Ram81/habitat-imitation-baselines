@@ -221,6 +221,7 @@ class ObjectNavDatasetV2(PointNavDatasetV1):
 
     def __init__(self, config: Optional[Config] = None) -> None:
         self.goals_by_category = {}
+        self.max_replay_steps = config.MAX_REPLAY_STEPS
         super().__init__(config)
         self.episodes = list(self.episodes)
 
@@ -329,7 +330,7 @@ class ObjectNavDatasetV2(PointNavDatasetV1):
 
                         path[p_index] = ShortestPathPoint(**point)
             
-            if len(episode.reference_replay) > 501:
+            if len(episode.reference_replay) > self.max_replay_steps:
                 continue
 
             self.episodes.append(episode)  # type: ignore [attr-defined]
