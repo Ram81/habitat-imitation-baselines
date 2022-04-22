@@ -501,6 +501,7 @@ class ILEnvTrainer(BaseRLTrainer):
 
         config.defrost()
         config.TASK_CONFIG.DATASET.SPLIT = config.EVAL.SPLIT
+        config.TASK_CONFIG.DATASET.TYPE = "ObjectNav-v1"
         config.TASK_CONFIG.ENVIRONMENT.MAX_EPISODE_STEPS = 500
         config.freeze()
 

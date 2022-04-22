@@ -184,19 +184,20 @@ For training the behavior cloning policy on the Pick-and-Place task using the di
 
 ### Evaluation
 
+To evaluate pretrained checkpoint on ObjectGoal Navigation, download the `objectnav_mp3d_v1` dataset from [here](https://github.com/facebookresearch/habitat-lab#task-datasets).
 
 For evaluating a checkpoint on the ObjectGoal Navigation task using the environment based setup:
     
 1. Use the following script if trained using distributed setup
 
   ```bash
-  sbatch job_scripts/run_objectnav_eval.sh habitat_baselines/config/objectnav/il_ddp_objectnav.yaml
+  sbatch job_scripts/run_objectnav_eval.sh habitat_baselines/config/objectnav/il_ddp_objectnav.yaml data/datasets/objectnav_mp3d_v1 /path/to/checkpoint
   ```
 
 2. Use the following script for evaluating single node checkpoint
 
   ```bash
-  sbatch job_scripts/run_objectnav_eval.sh habitat_baselines/config/objectnav/il_objectnav.yaml
+  sbatch job_scripts/run_objectnav_eval.sh habitat_baselines/config/objectnav/il_objectnav.yaml data/datasets/objectnav_mp3d_v1 /path/to/checkpoint
   ```
 
 For evaluating the behavior cloning policy on the Pick-and-Place task using the disk based setup:
