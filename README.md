@@ -14,7 +14,7 @@ We provide best checkpoints for agents trained on ObjectNav and Pick-and-Place. 
 | 🆕[Pick-and-Place]() | New Environments | [pick_place_rgbd_new_envs.ckpt](https://habitat-on-web.s3.amazonaws.com/release/checkpoints/pick_place/pick_place_rgbd_new_envs.ckpt) | 8.3 | 4.1 |
 
 
-You can find the pretrained RedNet semantic segmentation model weights [here]().
+You can find the pretrained RedNet semantic segmentation model weights [here](https://habitat-on-web.s3.amazonaws.com/release/checkpoints/rednet/rednet_semmap_mp3d_tuned.pth) and the pretrained depth encoder weights [here](https://habitat-on-web.s3.amazonaws.com/release/checkpoints/depth_encoder/gibson-2plus-resnet50.pth).
 
 ## Overview
 
