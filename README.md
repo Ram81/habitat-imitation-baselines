@@ -101,7 +101,14 @@ The primary code contributions from the paper are located in:
 
 - Download the MP3D dataset using the instructions here: https://github.com/facebookresearch/habitat-lab#scenes-datasets (download the full MP3D dataset for use with habitat)
 
-- Move the MP3D scene dataset or create a symlink at data/scene_datasets/mp3d.
+- Move the MP3D scene dataset or create a symlink at `data/scene_datasets/mp3d`.
+
+
+### Downloading Object Assets
+
+- Download the object assets used for Pick-and-Place task and THDA ObjectNav episodes from [here](https://habitat-on-web.s3.amazonaws.com/release/datasets/pick_place/objects.zip).
+
+- Unzip the object assets and verify they are stored at `data/test_assets/objects/`.
 
 ### Downloading Human Demonstrations Dataset
 
@@ -135,6 +142,10 @@ The code requires the datasets in `data` folder in the following format:
   │  │  │  ├── pick_place/
   │  │  │  │  ├── pick_place_12k/
   │  │  │  │  │  ├── train/
+  │  │  ├── test_assets/
+  │  │  │  ├── objects/
+  │  │  │  │  ├── apple.glb
+  │  │  │  │  └── plate.glb
   ```
 
 ### Packaging Demonstration Datasets
