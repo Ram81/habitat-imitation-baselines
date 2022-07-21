@@ -64,7 +64,7 @@ MODEL:
   USE_PRED_SEMANTICS: True
   SWITCH_TO_PRED_SEMANTICS_UPDATE: 0
   SEMANTIC_ENCODER:
-    rednet_ckpt: "data/rednet-models/rednet_semmap_mp3d_40_v2_vince.pth"
+    rednet_ckpt: "data/rednet-models/rednet_semmap_mp3d_tuned.pth"
     cnn_type: "ResnetSemSegEncoder"
     output_size: 256
     backbone: "resnet18"
