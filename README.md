@@ -114,14 +114,17 @@ The primary code contributions from the paper are located in:
 
 You can use the following datasets to reproduce results reported in our paper.
 
+```
+git clone git@hf.co:datasets/axel81/habitat-web data/datasets/
+```
+
 | Dataset| Scene dataset | Split | Link | Extract path |
 | ----- | --- | --- | --- | --- |
-| ObjectNav-HD | MP3D | 70k | [objectnav_mp3d_70k.json.gz](https://habitat-on-web.s3.amazonaws.com/release/datasets/objectnav/objectnav_mp3d_70k.zip) | `data/datasets/objectnav/objectnav_mp3d_70k/` |
-| ObjectNav-HD | MP3D+Gibson | Full | [objectnav_mp3d_gibson_80k.json.gz](https://habitat-on-web.s3.amazonaws.com/release/datasets/objectnav/objectnav_mp3d_gibson_80k.zip) | `data/datasets/objectnav/objectnav_mp3d_gibson_80k/` |
-| Pick-and-Place-HD | MP3D | Full | [pick_place_12k.json.gz](https://habitat-on-web.s3.amazonaws.com/release/datasets/pick_place/pick_place_12k.zip) | `data/datasets/pick_place/pick_place_12k/` |
-| Pick-and-Place-HD | MP3D | New Initializations | [pick_place_unseen_initializations.json.gz](https://habitat-on-web.s3.amazonaws.com/release/datasets/pick_place/pick_place_unseen_initializations.zip) | `data/datasets/pick_place/unseen_initializations/` |
-| Pick-and-Place-HD | MP3D | New Instructions | [pick_place_unseen_instructions.json.gz](https://habitat-on-web.s3.amazonaws.com/release/datasets/pick_place/pick_place_unseen_instructions.zip) | `data/datasets/pick_place/unseen_instructions/` |
-| Pick-and-Place-HD | MP3D | New Environments | [pick_place_unseen_scenes.json.gz](https://habitat-on-web.s3.amazonaws.com/release/datasets/pick_place/pick_place_unseen_scenes.zip) | `data/datasets/pick_place/unseen_scenes/` |
+| ObjectNav-HD | MP3D | 70k | objectnav_mp3d_70k | `data/datasets/objectnav/objectnav_mp3d_thda_70k/` |
+| Pick-and-Place-HD | MP3D | Full | pick_place_12k | `data/datasets/pick_place/train/` |
+| Pick-and-Place-HD | MP3D | New Initializations | pick_place_unseen_initializations | `data/datasets/pick_place/unseen_initializations/` |
+| Pick-and-Place-HD | MP3D | New Instructions | pick_place_unseen_instructions | `data/datasets/pick_place/unseen_instructions/` |
+| Pick-and-Place-HD | MP3D | New Environments | pick_place_unseen_scenes | `data/datasets/pick_place/unseen_scenes/` |
 
 The demonstration datasets released as part of this project are licensed under a [Creative Commons Attribution-NonCommercial 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
 
